@@ -1,0 +1,17 @@
+{% extends "base_template.html" %}
+{% block title %} Login Page{% endblock %}
+
+
+
+{% block content %}
+<h1>Login Here !!</h1>
+<div>
+    <form method="POST" action="{{url_for('index')}}">
+        <input class = "inp" name="username" type="text" placeholder="Username"><br><br>
+        <input class = "inp" name="password" type="password" placeholder="Password"><br><br>
+        <input id="btn" type="submit">
+    </form>
+    <span>Don't you have Account? <a href="{{url_for('signup')}}">Sign up</a></span>
+
+</div>
+{% endblock %}

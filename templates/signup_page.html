@@ -1,0 +1,17 @@
+{% extends "base_template.html" %}
+
+{% block title %}Sign up page{% endblock %}
+
+{% block content %}
+<h1>Signup Here !!</h1>
+<div>
+    <form method='POST' action="{{url_for('signup')}}">
+        <input class="inp" type="text" placeholder="Username" name="username"><br><br>
+        <input class="inp" type="password" placeholder="New Password" name="new_password"><br><br>
+        <input class="inp" type="password" placeholder="Confirm password" name="confirm_password">
+        <input class="btn" type="submit"><br><br>
+    </form>
+    <span>Already have an Account? <a href="{{url_for('index')}}">Login</a></span>
+
+</div>
+{% endblock %}

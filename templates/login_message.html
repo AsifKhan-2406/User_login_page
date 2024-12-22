@@ -1,0 +1,11 @@
+{% extends "base_template.html" %}
+{% block title %}
+Login Successful
+{% endblock %}
+
+{% block content %}
+{{username}}
+{{password}}
+<h1> {{message}} </h1>
+<a href="{{url_for(hyper_link)}}">{{page_route}}</a>
+{% endblock %}
